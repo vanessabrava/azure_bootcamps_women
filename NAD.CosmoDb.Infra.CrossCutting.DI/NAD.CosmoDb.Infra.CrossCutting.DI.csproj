@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.17.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.12" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NAD.CosmoDb.Application.Services\NAD.CosmoDb.Application.Services.csproj" />
+    <ProjectReference Include="..\NAD.CosmoDb.Infra.Database.Documents\NAD.CosmoDb.Infra.Database.Documents.csproj" />
+    <ProjectReference Include="..\NAD.CosmoDb.Infra.Database\NAD.CosmoDb.Infra.Database.csproj" />
+    <ProjectReference Include="..\NAD.CosmoDb.Services.Imp\NAD.CosmoDb.Services.Imp.csproj" />
+    <ProjectReference Include="..\NAD.CosmoDb.Services.Models\NAD.CosmoDb.Services.Models.csproj" />
+    <ProjectReference Include="..\NAD.CosmoDb.Services\NAD.CosmoDb.Services.csproj" />
+  </ItemGroup>
+
+</Project>
